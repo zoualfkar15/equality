@@ -1,0 +1,18 @@
+targets:
+  $default:
+    builders:
+      equality:
+        enabled: true
+
+
+builders:
+  equality:
+    import: "package:equality/builder.dart"  # Ensure the import path is correct
+    builder_factories: ["equalityBuilder"]  # Ensure this matches the function name in builder.dart
+    build_extensions: {".dart": [".g.dart"]}
+    auto_apply: dependents
+    build_to: source
+    applies_builders: ["source_gen|combining_builder"]
+
+
+

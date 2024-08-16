@@ -1,0 +1,4 @@
+
+class GenerateEqualityAndHashCode {
+  const GenerateEqualityAndHashCode();
+}
