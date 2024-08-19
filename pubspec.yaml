@@ -1,7 +1,9 @@
 name: equality
-description: "A new Flutter project."
-version: 0.0.1
-homepage:
+description: ''' The `equality` package helps you automatically generate `==` and `hashCode` methods for your Dart classes. It simplifies equality checks and hash code calculations, reducing boilerplate code and ensuring consistency across your data models.'''
+
+version: 1.0.6
+homepage: https://github.com/zoualfkar15/equality.git
+
 
 environment:
   sdk: '>=3.4.1 <4.0.0'
@@ -10,15 +12,18 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  json_annotation: ^4.7.0
+  json_annotation: ^4.8.1
+  build_runner: ^2.4.10
+  source_gen: ^1.5.0
+  analyzer: ^6.4.1
+  build: ^2.0.0
+  collection: ^1.18.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
-  build_runner: ^2.4.10
-  source_gen: ^1.5.0
-  analyzer: ^6.4.1
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
